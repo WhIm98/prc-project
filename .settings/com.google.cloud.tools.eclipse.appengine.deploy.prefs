@@ -1,0 +1,9 @@
+account.email=kondorzeroboy1@gmail.com
+app.yaml.path=src/main/appengine/app.yaml
+eclipse.preferences.version=1
+include.optional.configuration.files=true
+project.bucket=us.artifacts.project-prc.appspot.com
+project.id=project-prc
+project.previousVersion.stop=true
+project.promote=true
+project.version=
