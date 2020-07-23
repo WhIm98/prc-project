@@ -13,6 +13,9 @@
         <title>Home</title>
     </head>
     <body>
+
+        ${sessionScope.USERDTO.userName}
+
         <%@include file="header.jsp" %>
         <%@include file="showHouses.jsp" %>
         <%@include file="footer.html" %>

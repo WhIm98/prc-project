@@ -13,6 +13,7 @@
         <title>Verify email Page</title>
     </head>
     <body>
+        ${CODE}
         <%
             String priceLowerSH = request.getParameter("priceLower");
             String priceHigherSH = request.getParameter("priceHigher");

@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class CountyDTO {
+public class CountyDTO implements Serializable{
 
     String IdCounty;
     String IdName;

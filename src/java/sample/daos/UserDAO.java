@@ -146,8 +146,8 @@ public class UserDAO extends DAO {
             cnn = DBUtils.getConnection();
 
             if (cnn != null) {
-                String url = "INSERT INTO tblUsers (UserID, UserName, Email, Password, RoleID, Invalid) "
-                        + " VALUES (?,?,?,?,?,?)";
+                String url = "INSERT INTO tblUsers (UserID, UserName, Email, Password, RoleID, Invalid) VALUES (?,?,?,?,?,?)";
+                   
                 ps = cnn.prepareStatement(url);
                 ps.setString(1, dto.getUserID());
                 ps.setString(2, dto.getUserName());
@@ -155,8 +155,11 @@ public class UserDAO extends DAO {
                 ps.setString(4, dto.getPassword());
                 ps.setString(5, dto.getRoleID());
                 ps.setBoolean(6, false);
-                ps.executeUpdate();
-                result = true;
+                int row = ps.executeUpdate();
+                System.out.println(row);
+                if (row > 0) {
+                    result = true;
+                }
             }
         } catch (ClassNotFoundException | SQLException ex) {
 

@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class BillDTO {
+public class BillDTO implements Serializable{
 
     String idBill;
     String userID;

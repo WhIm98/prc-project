@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class StatusDTO {
+public class StatusDTO implements Serializable{
 
     String statusCode;
     String status;

@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class FurnitureDTO {
+public class FurnitureDTO implements Serializable{
 
     private int lotSize;
     private int numBed;

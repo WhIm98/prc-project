@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class PropertyDTO {
+public class PropertyDTO implements Serializable {
 
     String idHouse;
     boolean mediaRoom;

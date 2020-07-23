@@ -5,13 +5,14 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
 import java.sql.SQLException;
 
 /**
  *
  * @author HD
  */
-public class WayDTO {
+public class WayDTO implements Serializable {
 
     String idWay;
     String wayName;

@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class RoleDTO {
+public class RoleDTO implements Serializable{
     String roleID;
     String roleDescription;
 

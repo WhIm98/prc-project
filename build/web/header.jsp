@@ -28,6 +28,9 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
+        
+       
+         
         <%
             UserDTO userDTO = (UserDTO) session.getAttribute("USERDTO");
             String errorMess = (String) request.getAttribute("ERRORMESSAGE");

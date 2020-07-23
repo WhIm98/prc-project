@@ -5,6 +5,7 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
 import java.sql.SQLException;
 import sample.daos.TypeDAO;
 import sample.daos.WayDAO;
@@ -13,7 +14,7 @@ import sample.daos.WayDAO;
  *
  * @author HD
  */
-public class HouseDTO {
+public class HouseDTO implements Serializable{
 
     String idHouse;
     String picHouse; //url

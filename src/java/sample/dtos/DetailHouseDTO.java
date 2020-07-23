@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class DetailHouseDTO {
+public class DetailHouseDTO implements Serializable{
 
     private String wayName;
     private String cityId;

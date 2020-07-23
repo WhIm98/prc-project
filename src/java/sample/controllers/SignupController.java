@@ -44,7 +44,7 @@ public class SignupController extends HttpServlet {
                 String confirm = request.getParameter("confirm");
                 if (password.equalsIgnoreCase(confirm)) {
                     String email = request.getParameter("email");
-                    String roleID = "user";
+                    String roleID = "1";
                     UserDTO dto = new UserDTO(userID, userName, email, password, roleID);
                     if (UserDAO.insertAUser(dto)) {
                         url = SUCCESS;

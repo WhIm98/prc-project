@@ -5,11 +5,13 @@
  */
 package sample.dtos;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HD
  */
-public class TypeDTO {
+public class TypeDTO implements Serializable{
 
     private String typeID;
     private String typeName;
